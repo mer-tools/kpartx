@@ -22,8 +22,8 @@ install: $(EXEC) $(EXEC).8
 	$(INSTALL_PROGRAM) -m 755 $(EXEC) $(DESTDIR)$(bindir)
 	$(INSTALL_PROGRAM) -d $(DESTDIR)$(libudevdir)
 	$(INSTALL_PROGRAM) -m 755 kpartx_id $(DESTDIR)$(libudevdir)
-	$(INSTALL_PROGRAM) -d $(DESTDIR)/etc/udev/rules.d
-	$(INSTALL_PROGRAM) -m 644 kpartx.rules $(DESTDIR)/etc/udev/rules.d/
+	$(INSTALL_PROGRAM) -d $(DESTDIR)/lib/udev/rules.d
+	$(INSTALL_PROGRAM) -m 644 kpartx.rules $(DESTDIR)/lib/udev/rules.d/
 	$(INSTALL_PROGRAM) -d $(DESTDIR)$(mandir)
 	$(INSTALL_PROGRAM) -m 644 $(EXEC).8.gz $(DESTDIR)$(mandir)
 
